@@ -87,6 +87,4 @@ if (nmr3 < nmr1 && nmr3 > nmr2 ) {
     alert('Среднее из трех чисел ' + nmr3)
 } else if ( nmr3 > nmr1 && nmr3 < nmr2 ) {
     alert('Среднее из трех чисел ' + nmr3)
-} else {
-    alert('Error')
-}
+} 

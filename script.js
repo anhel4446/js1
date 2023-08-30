@@ -16,8 +16,6 @@
 // let message2 = ('The average between the three numbers is ' + (str8 + str9 + str10) / 3 );
 // alert(message2);
 
-
-
 // console.log('My name is ' + str);
 // console.log('I am ' + str2);
 // console.log('Example 1: 6 + 9 = 15 Your answer ' + str3);
@@ -27,11 +25,10 @@
 // console.log('Example 5: 10 % 3 = 1 Your answer ' + str7);
 // console.log('The average between numbers ' + str8 + ', ' + str9 + ', ' + str10 + ', ' +  ' is ' +  (str8 + str9 + str10) / 3);
 
-
 // var old = +prompt('How old are you')
 // if (old <= 18) {
 //     alert('still young');
-    
+
 // } else if (old > 18 && old < 50){
 //     alert('need work');
 // }
@@ -51,7 +48,7 @@
 // alert(message)
 
 // var ocl = +prompt('WHT time is it now')
- 
+
 // if (ocl > 0 && ocl <= 5) {
 //     alert(ocl + " night")
 // } else if (ocl > 5 && ocl <= 11) {
@@ -87,7 +84,7 @@
 //     alert('Среднее из трех чисел ' + nmr3)
 // } else if ( nmr3 > nmr1 && nmr3 < nmr2 ) {
 //     alert('Среднее из трех чисел ' + nmr3)
-// } 
+// }
 
 // var name = prompt ('ведите имя')
 // var old = prompt ('сколько вам лет')
@@ -100,41 +97,112 @@
 
 // alert('плогаль равно ' + a * b );
 
+// do {
+//     var num = +prompt('Ведите числоd')
+// } while (isNaN(num) || num != 5){
+//     let num2 = +prompt('ведите степень ')
+//     alert(num ** num2)
 
+// }
 
+// alert('начинаем 2 задание')
+// let numSteps = +(prompt('Введите количество ступеней:'));
+// let stepChar = prompt('Введите вид ступеней:');
+// let finalChar = prompt('Введите конечный символ ступеней:');
 
-do {
-    var num = +prompt('Ведите числоd')
-} while (isNaN(num) || num != 5){
-    let num2 = +prompt('ведите степень ') 
-    alert(num ** num2)
-    
+// for (let i = 1; i <= numSteps; i++) {
+//     let steps = stepChar.repeat(i) + finalChar;
+//     console.log(steps);
+// }
+
+// alert('начинаем 3 задание')
+
+// let number = +(prompt('Введите целое число:'));
+
+// if (!isNaN(number)) {
+//     let factorial = 1;
+//     for (let i = 1; i <= number; i++) {
+//         factorial *= i;
+//     }
+//     alert(`Факториал числа ${number} равен ${factorial}`);
+// } else {
+//     console.log('Введите корректное целое число.');
+// }
+
+// function rand(min, max){
+//     let num = Math.floor(Math.random() * (max + 1 - min) + min)
+//     return num
+// }
+
+// console.log(rand(1, 99));
+
+function rand(num1, num2) {
+  var num1 = +prompt("Введите мин число:");
+
+  var num2 = +prompt("Введите макс число:");
+
+  var num3 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+
+  var num4 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+
+  var num7 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+
+  var num8 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+
+  var rnd = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+
+  var rnd2 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+
+  var rnd1 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+
+  var rnd3 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+
+  var rnd4 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+
+  var rnd5 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+
+  var num5 = +prompt("1 пример " + num3 + "+" + num4 + "= " + "?");
+  var num6 = num3 + num4;
+  if (num5 == num6) {
+    alert("Верно");
+  } else {
+    alert("не верно " + num3 + "+" + num4 + "= " + (num3 + num4));
+  }
+
+  var num9 = +prompt("2 пример " + num7 + "+" + num8 + "= " + "?");
+  var num10 = num7 + num8;
+  if (num9 == num10) {
+    alert("Верно");
+  } else {
+    alert("не верно " + num7 + "+" + num8 + "= " + (num7 + num8));
+  }
+
+  var answ = +prompt("3 пример " + rnd + "+" + rnd2 + "= " + "?");
+  var cpr = rnd + rnd2;
+  if (answ == cpr) {
+    alert("Верно");
+  } else {
+    alert("не верно " + rnd + "+" + rnd2 + "= " + (rnd + rnd2));
+  }
+
+  var answ1 = +prompt("4 пример " + rnd1 + "+" + rnd3 + "= " + "?");
+  var cpr1 = rnd1 + rnd3;
+  if (answ1 == cpr1) {
+    alert("Верно");
+  } else {
+    alert("не верно" + rnd1 + "+" + rnd3 + "= " + (rnd1 + rnd3));
+  }
+
+  var answ2 = +prompt("5 пример " + rnd4 + "+" + rnd5 + "= " + "?");
+  var cpr2 = rnd4 + rnd5;
+  if (answ2 == cpr2) {
+    alert("Верно");
+  } else {
+    alert("не верно" + rnd4 + "+" + rnd5 + "= " + (rnd4 + rnd5));
+  }
+
+  // return num3 + num4 + num7 + num8
+  // ;
 }
 
-alert('начинаем 2 задание') 
-let numSteps = +(prompt('Введите количество ступеней:'));
-let stepChar = prompt('Введите вид ступеней:');
-let finalChar = prompt('Введите конечный символ ступеней:');
-
-for (let i = 1; i <= numSteps; i++) {
-    let steps = stepChar.repeat(i) + finalChar;
-    console.log(steps);
-}
-
-alert('начинаем 3 задание') 
-
-let number = +(prompt('Введите целое число:'));
-
-if (!isNaN(number)) {
-    let factorial = 1;
-    for (let i = 1; i <= number; i++) {
-        factorial *= i;
-    }
-    alert(`Факториал числа ${number} равен ${factorial}`);
-} else {
-    console.log('Введите корректное целое число.');
-}
-
-    
-
-    
+console.log(rand());

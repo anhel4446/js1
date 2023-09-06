@@ -286,11 +286,11 @@ recepts.delivery = {
 //   console.log(`${key} ${recepts[key].price}`);
 // }
 
-for (const key in recepts) {
-  for (const key2 in recepts[key]) {
-    console.log(`вы заказали ${key} ${recepts[key][key2]}`);
-  }
-}
+// for (const key in recepts) {
+//   for (const key2 in recepts[key]) {
+//     console.log(`вы заказали ${key} ${recepts[key][key2]}`);
+//   }
+// }
 
 //3 задание 
 

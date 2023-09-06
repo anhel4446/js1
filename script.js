@@ -136,73 +136,183 @@
 
 // console.log(rand(1, 99));
 
-function rand(num1, num2) {
-  var num1 = +prompt("Введите мин число:");
+// function rand(num1, num2) {
+//   var num1 = +prompt("Введите мин число:");
 
-  var num2 = +prompt("Введите макс число:");
+//   var num2 = +prompt("Введите макс число:");
 
-  var num3 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+//   var num3 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
 
-  var num4 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+//   var num4 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
 
-  var num7 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+//   var num7 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
 
-  var num8 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+//   var num8 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
 
-  var rnd = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+//   var rnd = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
 
-  var rnd2 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+//   var rnd2 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
 
-  var rnd1 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+//   var rnd1 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
 
-  var rnd3 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+//   var rnd3 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
 
-  var rnd4 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+//   var rnd4 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
 
-  var rnd5 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
+//   var rnd5 = Math.floor(Math.random() * (num2 + 1 - num1) + num1);
 
-  var num5 = +prompt("1 пример " + num3 + "+" + num4 + "= " + "?");
-  var num6 = num3 + num4;
-  if (num5 == num6) {
-    alert("Верно");
-  } else {
-    alert("не верно " + num3 + "+" + num4 + "= " + (num3 + num4));
+//   var num5 = +prompt("1 пример " + num3 + "+" + num4 + "= " + "?");
+//   var num6 = num3 + num4;
+//   if (num5 == num6) {
+//     alert("Верно");
+//   } else {
+//     alert("не верно " + num3 + "+" + num4 + "= " + (num3 + num4));
+//   }
+
+//   var num9 = +prompt("2 пример " + num7 + "+" + num8 + "= " + "?");
+//   var num10 = num7 + num8;
+//   if (num9 == num10) {
+//     alert("Верно");
+//   } else {
+//     alert("не верно " + num7 + "+" + num8 + "= " + (num7 + num8));
+//   }
+
+//   var answ = +prompt("3 пример " + rnd + "+" + rnd2 + "= " + "?");
+//   var cpr = rnd + rnd2;
+//   if (answ == cpr) {
+//     alert("Верно");
+//   } else {
+//     alert("не верно " + rnd + "+" + rnd2 + "= " + (rnd + rnd2));
+//   }
+
+//   var answ1 = +prompt("4 пример " + rnd1 + "+" + rnd3 + "= " + "?");
+//   var cpr1 = rnd1 + rnd3;
+//   if (answ1 == cpr1) {
+//     alert("Верно");
+//   } else {
+//     alert("не верно" + rnd1 + "+" + rnd3 + "= " + (rnd1 + rnd3));
+//   }
+
+//   var answ2 = +prompt("5 пример " + rnd4 + "+" + rnd5 + "= " + "?");
+//   var cpr2 = rnd4 + rnd5;
+//   if (answ2 == cpr2) {
+//     alert("Верно");
+//   } else {
+//     alert("не верно" + rnd4 + "+" + rnd5 + "= " + (rnd4 + rnd5));
+//   }
+
+//   // return num3 + num4 + num7 + num8
+//   // ;
+// }
+
+// 1 задание
+
+// console.log(rand());
+
+// function rand(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1) + min);
+// }
+
+// let min = +prompt('Минимальное число:');
+// let max = +prompt('Максимальное число:');
+
+// for (let i = 1; i <= 5; i++) {
+//   let s1 = rand(min, max);
+//   let s2 = rand(min, max);
+
+//   // Случайно выбираем операцию: 0 - сложение, 1 - вычитание, 2 - умножение, 3 - деление
+//   let operation = rand(0, 3);
+
+//   let s3, operator;
+
+//   switch (operation) {
+//     case 0:
+//       s3 = s1 + s2;
+//       operator = '+';
+//       break;
+//     case 1:
+//       s3 = s1 - s2;
+//       operator = '-';
+//       break;
+//     case 2:
+//       s3 = s1 * s2;
+//       operator = '*';
+//       break;
+//     case 3:
+//       s3 = s1 / s2;
+//       operator = '/';
+//       break;
+//   }
+
+//   let userAnswer = +prompt(`Решите пример: ${s1} ${operator} ${s2} =`);
+
+//   let answerMessage = (Math.abs(s3 - userAnswer) < 0.0001) ? 'Молодец!' : 'Ошибка!';
+
+//   alert(`${s1} ${operator} ${s2} = ${s3}\nВаш ответ: ${userAnswer}\nВерный ответ: ${s3}\n${answerMessage}`);
+// }
+
+// 2 задание
+// let users = {};
+
+// for (let i = 1; i <= 10; i++) {
+//   let id = i;
+//   let userName = prompt("Your name?");
+//   let userAge = prompt("How old are you?");
+
+//   const user = {
+//     User: 'User ' + id,
+//     Name: 'Name ' + userName,
+//     Age: 'Age ' + userAge,
+//   };
+
+//   users[id] = user;
+// }
+
+// for (const userId in users) {
+//   const user = users[userId];
+//   for (const key in user) {
+//     console.log(user[key]);
+//   }
+//   console.log('\n');
+// }
+
+// let recepts = receipt();
+
+// recepts.delivery = {
+//   price: 9000,
+// };
+
+// // for (const key in recepts) {
+// //   console.log(`${key} ${recepts[key].price}`);
+// // }
+
+// for (const key in recepts) {
+//   for (const key2 in recepts[key]) {
+//     console.log(`вы заказали ${key} ${recepts[key][key2]}`);
+//   }
+// }
+
+
+function calculateTotalOrder(order) {
+  let total = 0;
+
+  // Вывод списка заказа
+  console.log('Список заказа:');
+  for (const key in order) {
+    const item = order[key];
+    console.log(`${key}: ${item.info} - ${item.price} сум`);
+    total += item.price;
   }
 
-  var num9 = +prompt("2 пример " + num7 + "+" + num8 + "= " + "?");
-  var num10 = num7 + num8;
-  if (num9 == num10) {
-    alert("Верно");
-  } else {
-    alert("не верно " + num7 + "+" + num8 + "= " + (num7 + num8));
-  }
+  // Добавление стоимости доставки (9000 сум)
+  total += 9000;
 
-  var answ = +prompt("3 пример " + rnd + "+" + rnd2 + "= " + "?");
-  var cpr = rnd + rnd2;
-  if (answ == cpr) {
-    alert("Верно");
-  } else {
-    alert("не верно " + rnd + "+" + rnd2 + "= " + (rnd + rnd2));
-  }
-
-  var answ1 = +prompt("4 пример " + rnd1 + "+" + rnd3 + "= " + "?");
-  var cpr1 = rnd1 + rnd3;
-  if (answ1 == cpr1) {
-    alert("Верно");
-  } else {
-    alert("не верно" + rnd1 + "+" + rnd3 + "= " + (rnd1 + rnd3));
-  }
-
-  var answ2 = +prompt("5 пример " + rnd4 + "+" + rnd5 + "= " + "?");
-  var cpr2 = rnd4 + rnd5;
-  if (answ2 == cpr2) {
-    alert("Верно");
-  } else {
-    alert("не верно" + rnd4 + "+" + rnd5 + "= " + (rnd4 + rnd5));
-  }
-
-  // return num3 + num4 + num7 + num8
-  // ;
+  // Вывод общей стоимости
+  console.log(`Общая стоимость с доставкой: ${total} сум`);
 }
 
-console.log(rand());
+// Получаем случайный заказ
+const randomOrder = receipt();
+
+// Вызываем функцию для расчета и вывода информации о заказе
+calculateTotalOrder(randomOrder);

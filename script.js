@@ -207,91 +207,92 @@
 
 // 1 задание
 
-// console.log(rand());
+console.log(rand());
 
-// function rand(min, max) {
-//   return Math.floor(Math.random() * (max - min + 1) + min);
-// }
+function rand(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
-// let min = +prompt('Минимальное число:');
-// let max = +prompt('Максимальное число:');
+let min = +prompt('Минимальное число:');
+let max = +prompt('Максимальное число:');
 
-// for (let i = 1; i <= 5; i++) {
-//   let s1 = rand(min, max);
-//   let s2 = rand(min, max);
+for (let i = 1; i <= 5; i++) {
+  let s1 = rand(min, max);
+  let s2 = rand(min, max);
 
-//   // Случайно выбираем операцию: 0 - сложение, 1 - вычитание, 2 - умножение, 3 - деление
-//   let operation = rand(0, 3);
+  // Случайно выбираем операцию: 0 - сложение, 1 - вычитание, 2 - умножение, 3 - деление
+  let operation = rand(0, 3);
 
-//   let s3, operator;
+  let s3, operator;
 
-//   switch (operation) {
-//     case 0:
-//       s3 = s1 + s2;
-//       operator = '+';
-//       break;
-//     case 1:
-//       s3 = s1 - s2;
-//       operator = '-';
-//       break;
-//     case 2:
-//       s3 = s1 * s2;
-//       operator = '*';
-//       break;
-//     case 3:
-//       s3 = s1 / s2;
-//       operator = '/';
-//       break;
-//   }
+  switch (operation) {
+    case 0:
+      s3 = s1 + s2;
+      operator = '+';
+      break;
+    case 1:
+      s3 = s1 - s2;
+      operator = '-';
+      break;
+    case 2:
+      s3 = s1 * s2;
+      operator = '*';
+      break;
+    case 3:
+      s3 = s1 / s2;
+      operator = '/';
+      break;
+  }
 
-//   let userAnswer = +prompt(`Решите пример: ${s1} ${operator} ${s2} =`);
+  let userAnswer = +prompt(`Решите пример: ${s1} ${operator} ${s2} =`);
 
-//   let answerMessage = (Math.abs(s3 - userAnswer) < 0.0001) ? 'Молодец!' : 'Ошибка!';
+  let answerMessage = (Math.abs(s3 - userAnswer) < 0.0001) ? 'Молодец!' : 'Ошибка!';
 
-//   alert(`${s1} ${operator} ${s2} = ${s3}\nВаш ответ: ${userAnswer}\nВерный ответ: ${s3}\n${answerMessage}`);
-// }
+  alert(`${s1} ${operator} ${s2} = ${s3}\nВаш ответ: ${userAnswer}\nВерный ответ: ${s3}\n${answerMessage}`);
+}
 
 // 2 задание
-// let users = {};
+let users = {};
 
-// for (let i = 1; i <= 10; i++) {
-//   let id = i;
-//   let userName = prompt("Your name?");
-//   let userAge = prompt("How old are you?");
+for (let i = 1; i <= 10; i++) {
+  let id = i;
+  let userName = prompt("Your name?");
+  let userAge = prompt("How old are you?");
 
-//   const user = {
-//     User: 'User ' + id,
-//     Name: 'Name ' + userName,
-//     Age: 'Age ' + userAge,
-//   };
+  const user = {
+    User: 'User ' + id,
+    Name: 'Name ' + userName,
+    Age: 'Age ' + userAge,
+  };
 
-//   users[id] = user;
-// }
+  users[id] = user;
+}
 
-// for (const userId in users) {
-//   const user = users[userId];
-//   for (const key in user) {
-//     console.log(user[key]);
-//   }
-//   console.log('\n');
-// }
+for (const userId in users) {
+  const user = users[userId];
+  for (const key in user) {
+    console.log(user[key]);
+  }
+  console.log('\n');
+}
 
-// let recepts = receipt();
+let recepts = receipt();
 
-// recepts.delivery = {
-//   price: 9000,
-// };
-
-// // for (const key in recepts) {
-// //   console.log(`${key} ${recepts[key].price}`);
-// // }
+recepts.delivery = {
+  price: 9000,
+};
 
 // for (const key in recepts) {
-//   for (const key2 in recepts[key]) {
-//     console.log(`вы заказали ${key} ${recepts[key][key2]}`);
-//   }
+//   console.log(`${key} ${recepts[key].price}`);
 // }
 
+for (const key in recepts) {
+  for (const key2 in recepts[key]) {
+    console.log(`вы заказали ${key} ${recepts[key][key2]}`);
+  }
+}
+
+//3 задание 
 
 function calculateTotalOrder(order) {
   let total = 0;
